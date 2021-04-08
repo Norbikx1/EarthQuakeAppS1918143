@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--Earth Quake App
+Norbert Bednarski
+s1918143-->
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/linkTxt"
+        android:layout_width="330dp"
+        android:layout_height="70dp"
+        android:layout_marginEnd="16dp"
+        android:text="Link"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toTopOf="@+id/latitudeTxt"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/pubDateTxt"
+        app:layout_constraintTop_toBottomOf="@+id/pubDateTxt"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/descriptionTxt"
+        android:layout_width="330dp"
+        android:layout_height="79dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="16dp"
+        android:text="Description"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/magTxt"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/pubDateTxt"
+        android:layout_width="330dp"
+        android:layout_height="43dp"
+        android:text="Publicaiton Date"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/descriptionTxt"
+        app:layout_constraintTop_toBottomOf="@+id/descriptionTxt"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/latitudeTxt"
+        android:layout_width="330dp"
+        android:layout_height="47dp"
+        android:layout_marginEnd="16dp"
+        android:text="Latitude"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/linkTxt"
+        app:layout_constraintTop_toBottomOf="@+id/linkTxt"
+        tools:ignore="MissingConstraints" />
+
+    <TextView
+        android:id="@+id/longitudeTxt"
+        android:layout_width="330dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Longitude"
+        android:textSize="16sp"
+        android:textStyle="bold"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@+id/latitudeTxt"
+        app:layout_constraintTop_toBottomOf="@+id/latitudeTxt"
+        app:layout_constraintVertical_bias="0.0"
+        tools:ignore="MissingConstraints" />
+
+    <Button
+        android:id="@+id/showDetails"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        android:layout_marginEnd="200dp"
+        android:text="Show Details"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/mapBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="67dp"
+        android:layout_marginEnd="15dp"
+        android:text="Zoom marker"
+        app:layout_constraintBottom_toBottomOf="@+id/showDetails"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/showDetails"
+        app:layout_constraintTop_toTopOf="@+id/showDetails" />
+
+    <TextView
+        android:id="@+id/locationTxt"
+        android:layout_width="330dp"
+        android:layout_height="57dp"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="16dp"
+        android:text="Location"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/magTxt"
+        android:layout_width="330dp"
+        android:layout_height="33dp"
+        android:layout_marginEnd="16dp"
+        android:text="Magnitude"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/locationTxt" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
